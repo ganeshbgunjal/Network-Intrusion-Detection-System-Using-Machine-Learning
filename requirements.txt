@@ -1,0 +1,5 @@
+# Here all necessory libraies for the project are listed.
+python-dotenv
+numpy
+pandas
+scikit-learn
