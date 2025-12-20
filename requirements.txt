@@ -1,5 +1,11 @@
 # Here all necessory libraies for the project are listed.
 python-dotenv
-numpy
+numpy>=1.23
 pandas
 scikit-learn
+seaborn
+matplotlib
+pymongo
+certifi
+
+# -e .
