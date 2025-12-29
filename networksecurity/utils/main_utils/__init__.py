@@ -1,1 +1,0 @@
-# This file is for defining the data schema used in the project.

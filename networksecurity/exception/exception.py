@@ -2,9 +2,10 @@
 
 import sys
 from networksecurity.logging import logger
+from typing import Any
 
 class NetworkSecurityException(Exception):
-    def __init__(self,error_message,error_details:sys):
+    def __init__(self,error_message,error_details:Any):
         self.error_message = error_message
         _,_,exc_tb = error_details.exc_info()
         
