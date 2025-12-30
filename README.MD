@@ -1,1 +1,1 @@
-## Network Security poject for Phishing data.
+## Network Security project for Phishing data.
