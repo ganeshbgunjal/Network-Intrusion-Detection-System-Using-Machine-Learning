@@ -1,4 +1,4 @@
-# here some files need not to be tracked by git. we will list them here.
+# here some files need not to be tracked by git. we will list them here..
 artifacts/
 logs/
 .env
