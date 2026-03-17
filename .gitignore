@@ -1,3 +1,7 @@
 # here some files need not to be tracked by git. we will list them here.
-venv/
-env/
+artifacts/
+logs/
+.env
+__pycache__/
+*.pkl
+*.csv
