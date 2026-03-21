@@ -6,3 +6,7 @@ __pycache__/
 *.pkl
 *.csv
 venv/
+
+# MLflow local data
+mlruns/
+mlflow.db
