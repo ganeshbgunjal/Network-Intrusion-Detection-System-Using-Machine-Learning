@@ -30,6 +30,10 @@ from sklearn.ensemble import (
 
 import mlflow
 
+import dagshub
+dagshub.init(repo_owner='ganeshbgunjal', repo_name='networksecurity', mlflow=True)
+
+
 
 class ModelTrainer:
     def __init__(
@@ -135,7 +139,7 @@ class ModelTrainer:
 
             import mlflow
 
-            mlflow.set_tracking_uri("sqlite:///mlflow.db")
+            # mlflow.set_tracking_uri("sqlite:///mlflow.db")
             mlflow.set_experiment("NetworkSecurityProject")
 
             with mlflow.start_run():
@@ -175,6 +179,8 @@ class ModelTrainer:
                 file_path=self.model_trainer_config.trained_model_file_path,
                 obj=network_model,
             )
+
+            save_object("final_models/model.pkl",best_model)
 
             # Create artifact
             model_trainer_artifact = ModelTrainerArtifact(
